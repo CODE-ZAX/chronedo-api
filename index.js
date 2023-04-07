@@ -17,7 +17,9 @@ async function scrapeWatches(url) {
       const linkElement = item.querySelector("a");
       const titleElement = item.querySelector(".text-bold.text-ellipsis");
       const subtitleElement = item.querySelector(".text-ellipsis.m-b-2");
-      const priceElement = item.querySelector(".text-bold");
+      const priceElement = item.querySelector(
+        ".d-flex.justify-content-between.align-items-end.m-b-1 .text-bold"
+      );
       const imageElement = item.querySelector(
         ".article-item-image-container img"
       );
